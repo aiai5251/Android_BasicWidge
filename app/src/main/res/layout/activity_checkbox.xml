@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <!--   !!!!!layout_gravity属性是针对LinearLayout布局的!!!!!  -->
+
+    <!-- 横向android:orientation="horizontal"   布局内容位置显示：android:gravity="bottom|center_hoorizontal"-->
+
+
+    <!--checked 默认false，选中状态-->
+    <!--水平布局：android:orientation="horizontal"-->
+    <!--所占据的比例 android:layout_weight="1"，wrap_content正比例，match_parent：反比例-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="312dp">
+        <!--RelativeLayout：属性-->
+        <!--android:layout_alignParentLeft="true" 子类控件相对当前父类容器靠左边-->
+        <!--android:layout_alignParentTop="true" 子类控件相对父类容器靠上边-->
+        <!--android:layout_marginLeft="41dp" 子类控件距离父类容器的左边的距离-->
+        <!--android:layout_marginTop="33dp" 子类控件距离父类容器上边的距离-->
+        <!--android:layout_centerInParent="true" 子类控件相对父类容器即水平居中又垂直居中-->
+        <!--android:layout_centerHorizontal="true" 子类控件相对父类容器水平居中-->
+        <!--android:layout_centerVertical="true" 子类控件相对父类容器垂直居中-->
+
+        <!--android:layout_below="@+id/button1" 该控件位于给定id控件的底部-->
+        <!--android:layout_toRightOf="@+id/button1" 该控件位于给定id控件的右边-->
+        <!--android:layout_above="@+id/button1" 该控件位于给定id控件的上面-->
+        <!--android:layout_toLeftOf="@+id/button1" 该控件位于给定控件的左边-->
+        <!--android:layout_alignBaseline="@+id/button1" 该控件的内容与给定id控件的内容在一条线上-->
+        <!--android:layout_alignBottom 该控件的底部边缘与给定ID控件的底部边缘对齐-->
+        <!--android:layout_alignLeft 该控件与给定ID控件的左边缘对齐-->
+        <!--android:layout_alignRight 该控件与给定ID控件的右边缘对齐-->
+        <!--android:layout_alignTop 该控件与给定ID控件的顶部对齐-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bt1"
+            android:id="@+id/returnButton1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bt2"
+            android:id="@+id/returnButton2"
+            android:layout_below="@+id/returnButton1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bt3"
+            android:id="@+id/returnButton3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="74dp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"
+            android:id="@+id/radioButton1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:id="@+id/radioButton2" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="篮球"
+        android:id="@+id/checkBox1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="足球"
+        android:id="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乒乓球"
+        android:id="@+id/checkBox3" />
+
+    <TextView
+        android:textSize="28dp"
+        android:layout_width="373dp"
+        android:layout_height="match_parent"
+        android:text=" 无"
+        android:id="@+id/returnTextView" />
+
+
+</LinearLayout>

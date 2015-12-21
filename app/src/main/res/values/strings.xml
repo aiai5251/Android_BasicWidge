@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">lvmamaTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_name">登录</string>
+    <string name="text_bt1">我是第一种启动方式</string>
+    <string name="text_bt2">我是第二种启动方式</string>
+    <string name="text_bt3">我是第三种启动方式</string>
+</resources>

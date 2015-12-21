@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--android:collapseColumns=“1，2”隐藏从0开始的索引列，列之间用逗号隔开-->
+    <!--android:shrinkColumns="1,2" 收缩从0开始的索引列，当可收缩的列太宽（内容过多）不会被挤出屏幕外-->
+    <!--android:strechColumns="1,3" 拉伸从0开始的索引列，以填满剩下的多余的空白控件(*代表所有列均收缩拉伸)-->
+
+    <!--
+    android:layout_column="1" 该控件显示在第2列
+    android:layout_span="2" 该控件占据2列宽度
+    -->
+
+    //计算机页面，有待开发
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bt1"
+            android:id="@+id/button4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bt2"
+            android:id="@+id/button5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bt3"
+            android:id="@+id/button6" />
+    </TableRow>
+</TableLayout>
